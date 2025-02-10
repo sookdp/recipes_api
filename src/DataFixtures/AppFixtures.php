@@ -45,7 +45,7 @@ class AppFixtures extends Fixture
                 $comment->setContent("Délicieuse recette, je recommande !")
                     ->setRating(rand(3, 5)) // Note aléatoire entre 3 et 5
                     ->setRecipe($recipe)
-                    ->setUser(rand(13, 22)); // Simule des utilisateurs différents
+                    ->setUser(rand(1, 10)); // Simule des utilisateurs différents
                 $manager->persist($comment);
             }
         }
